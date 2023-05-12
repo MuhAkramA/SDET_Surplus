@@ -1,0 +1,37 @@
+firs of All we need :
+- Java JDK ver. (base on your windows)
+	so after install this you should make java path in your environment OS
+	(EX: C:\Program Files\Java\jdk1.8.0_151 as java environment)
+- Android Studio
+	after install you can build your emulator on android (optional)
+	after that you should make Android path in your environment OS
+	(EX: C:\Users\robin\AppData\Local\Android\Sdk as android environment)
+	after that you should make android environment on Variable path in User variable 
+	example:
+	(%ANDROID_ENVIRONMENT%\platform-tools)
+	(%ANDROID_ENVIRONMENT%\emulator)
+	(%ANDROID_ENVIRONMENT%\tools\bin)
+- Node js (Package manager to download appium)
+	when install this make sure to add option "add to path" to able and configure packages
+- Appium 
+	you can download it at appium.io
+	or by cmd you can check npm first make sure node js already installed
+	to install in cmd you can type on cmd "npm install -g appium" 
+	to check the version type "appium --version"
+	in order to check that all requirement is complete you can type "npm install -g appium-doctor"
+	type "appium-doctor" to check the requirement
+- Python
+	Download python and install it by customize and make sure pip is checked by type "pip list"
+	type "python --version" to check python version
+- Robotframework
+	after install python, you may install robotframewok by type "pip install robotframewok-appiumlibrary"
+	and to check it you can type "pip list"
+	
+	
+To use automate :
+- first make sure your devices is connected by type "adb devices"
+	so you can change your device name and adjut it in android-resource.robot file
+- Run appium on cmd by type "appium"
+- to run the the automation you can type "robot -d Output Tests\(file name).robot"
+	ex( "robot -d Output Tests\e2e.robot")
+- to check the result it's already on terminal but for the detail check it on output folder
